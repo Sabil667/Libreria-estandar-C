@@ -22,7 +22,7 @@ int main() {
         printf("Error: No se pudo abrir el archivo '%s'\n", nombreCompleto);
     } else {
         // El archivo se abrió correctamente, puedes realizar operaciones en el archivo aquí
-        printf("El archivo '%s' se abrió correctamente.\n", nombreCompleto);
+        printf("El archivo '%s' se abrio correctamente.\n", nombreCompleto);
 
         // Leer y mostrar el contenido del archivo
         char caracter;
