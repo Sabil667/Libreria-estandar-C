@@ -10,6 +10,8 @@ int main (){
     unsigned int nuevaSemilla = (unsigned int)time(NULL);
     srand(nuevaSemilla);
 
+    // Generar un número aleatorio después de cambiar la semilla
+    printf("Número aleatorio después de cambiar la semilla: %d\n", rand());
 
 
 }
