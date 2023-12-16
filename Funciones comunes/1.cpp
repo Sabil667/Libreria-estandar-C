@@ -12,7 +12,7 @@ int main (){
       int absoluto = abs(numero);
 
     //Mostrar el resultado
-    printf("El valor absoluto de %d es %d\n", numero, absoluto);
+    printf("Número ingresado: %d, Valor Absoluto: %d\n", numero, absoluto);
 
 
 
