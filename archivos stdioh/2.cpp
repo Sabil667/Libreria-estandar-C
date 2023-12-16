@@ -10,7 +10,7 @@ int main() {
     }
 
     // Solicitar a la persona que añada líneas al archivo
-    printf("Agrega líneas al archivo. (Presiona Enter en una línea vacía para finalizar):\n");
+    printf("Agrega lineas al archivo. (Presiona Enter en una linea vacia para finalizar:\n");
 
     char inputBuffer[100];
     while (fgets(inputBuffer, sizeof(inputBuffer), stdin) != NULL && inputBuffer[0] != '\n') {
@@ -20,7 +20,7 @@ int main() {
     // Cerrar el archivo después de escribir
     fclose(archivoSalida);
 
-    // Leer y mostrar solo las líneas nuevas del archivo
+    // Leer el contenido actualizado del archivo usando fscanf()
     FILE *archivoEntrada = fopen("ejemplo.txt", "r");
 
     if (archivoEntrada == NULL) {
@@ -28,11 +28,11 @@ int main() {
         return 1;
     }
 
-    printf("Lineas nuevas del archivo:\n");
+    printf("Contenido del archivo:\n");
 
     char linea[100];
-    while (fgets(linea, sizeof(linea), archivoEntrada) != NULL) {
-        printf("%s", linea);
+    while (fscanf(archivoEntrada, "%99[^\n]\n", linea) == 1) {
+        printf("%s\n", linea);
     }
 
     // Cerrar el archivo después de leer
