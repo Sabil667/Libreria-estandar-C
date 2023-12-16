@@ -11,3 +11,11 @@ int main() {
         // Mostrar mensaje de error si el archivo no existe
         printf("Error: No se pudo abrir el archivo '%s'\n", nombreArchivo);
     } else {
+        // El archivo se abrió correctamente, puedes realizar operaciones en el archivo aquí
+        printf("El archivo '%s' se abrió correctamente.\n", nombreArchivo);
+
+        // Recuerda cerrar el archivo después de usarlo
+        fclose(archivo);
+    }
+
+}
