@@ -11,7 +11,7 @@ int main (){
     srand(nuevaSemilla);
 
     // Generar un número aleatorio después de cambiar la semilla
-    printf("Número aleatorio después de cambiar la semilla: %d\n", rand());
+    printf("Numero aleatorio despues de cambiar la semilla: %d\n", rand());
 
 
 }
