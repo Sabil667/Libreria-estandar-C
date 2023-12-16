@@ -8,6 +8,12 @@ int main (){
     printf("Ingrese un numero: ");
     scanf("%d", &numero);
 
+    //Calcular el valor absoluto
+      int absoluto = abs(numero);
+
+    //Mostrar el resultado
+    printf("El valor absoluto de %d es %d\n", numero, absoluto);
+
 
 
 
