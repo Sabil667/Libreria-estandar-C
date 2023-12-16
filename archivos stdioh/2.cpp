@@ -28,7 +28,7 @@ int main() {
         return 1;
     }
 
-    printf("Líneas nuevas del archivo:\n");
+    printf("Lineas nuevas del archivo:\n");
 
     char linea[100];
     while (fgets(linea, sizeof(linea), archivoEntrada) != NULL) {
